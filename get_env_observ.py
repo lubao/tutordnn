@@ -1,6 +1,5 @@
 from gym import envs
-import pprint as pp
-
+import gym
 
 class NullE:
     def __init__(self):
@@ -17,15 +16,17 @@ for e in envall:
     try:
         env = e.make()
     except:
-        env = NullE()
-        continue  #  Skip these for now
-    table += '| {}|{}|{}|{}|{}|{}|{}|\n'.format(e.id,   #|{}|{}|{}
-       env.observation_space, env.action_space, env.reward_range,
-       e.timestep_limit, e.trials, e.reward_threshold) # ,
+        env = gym.make(e.id)
+        #print e._entry_point
+        #continue  #  Skip these for now
+    #table += '| {}|{}|{}|{}|{}|{}|{}|\n'.format(e.id,   #|{}|{}|{}
+    #   env.observation_space, env.action_space, env.reward_range,
+    #   e.timestep_limit, e.trials, e.reward_threshold) # ,
        # getattr(e, 'local_only', -1), e.nondeterministic, getattr(e, 'kwargs',
        # ""))
     result.append([
         e.id,
+        e._entry_point,
         env.observation_space, 
         env.action_space,
         env.reward_range,
@@ -33,5 +34,7 @@ for e in envall:
         e.trials, 
         e.reward_threshold
     ])
+#print table
 for r in result:
     print r
+#print len(result)

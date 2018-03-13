@@ -29,6 +29,8 @@ https://github.com/openai/gym
 
 https://gym.openai.com/docs/
 
+$ pip install gym[atari]
+
 #### GYM Environments Explaination
 
 https://github.com/openai/gym/wiki/Table-of-environments
