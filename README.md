@@ -29,6 +29,10 @@ https://github.com/openai/gym
 
 https://gym.openai.com/docs/
 
+#### GYM Environments Explaination
+
+https://github.com/openai/gym/wiki/Table-of-environments
+
 ### Keras
 
 https://github.com/keras-team/keras
