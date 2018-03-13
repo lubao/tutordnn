@@ -20,9 +20,11 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu
 https://github.com/NVIDIA/nvidia-docker
 
 ### OpenAI/GYM
-pip install gym
+https://github.com/openai/gym
+https://gym.openai.com/docs/
 
 ### Keras
+https://github.com/keras-team/keras
 https://keras.io/#installation
 
 #### Check Keras Backend
