@@ -31,6 +31,14 @@ https://gym.openai.com/docs/
 
 $ pip install gym[atari]
 
+$ pip install Box2D
+
+#### Mujoco Python
+
+https://github.com/openai/mujoco-py/
+
+$ pip install mujoco-py==0.5.7
+
 #### GYM Environments Explaination
 
 https://github.com/openai/gym/wiki/Table-of-environments
