@@ -29,6 +29,10 @@ https://github.com/openai/gym
 
 https://gym.openai.com/docs/
 
+## Full List of Games
+
+https://gym.openai.com/envs/#classic_control
+
 $ pip install gym[atari]
 
 $ pip install Box2D
